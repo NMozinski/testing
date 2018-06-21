@@ -78,12 +78,12 @@ The provision process is as follows:
 
 ## updating or creating kibana dashboard
 1. Create the provisioning container
-⋅⋅a. Download or clone [devops-provisioning](https://github.com/CyGlass/devops-provisioning)
-⋅⋅b. Open in terminal and run “make build”
+..1. Download or clone [devops-provisioning](https://github.com/CyGlass/devops-provisioning)
+..b. Open in terminal and run “make build”
 2. Download the dashboard
-⋅⋅a. Create folder to store the dashboard in inside provisioning/dashboards
-⋅⋅b. Open this folder in terminal
-⋅⋅c. Run ../download.sh website.cyglass.com "Dashboard Name"
+..a. Create folder to store the dashboard in inside provisioning/dashboards
+..b. Open this folder in terminal
+..c. Run ../download.sh website.cyglass.com "Dashboard Name"
 3. Upload changes to git
 ⋅⋅a. Ensure that the new dashboard and all its visualizations are accounted for in the folder.
 ⋅⋅b. Use eclipse to push changes(The dashboard files) to github.
