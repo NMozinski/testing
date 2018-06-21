@@ -78,15 +78,15 @@ The provision process is as follows:
 
 ## updating or creating kibana dashboard
 1. Create the provisioning container
-    1. Download or clone [devops-provisioning](https://github.com/CyGlass/devops-provisioning)
+   1. Download or clone [devops-provisioning](https://github.com/CyGlass/devops-provisioning)
    2. Open in terminal and run “make build”
 2. Download the dashboard
-  1. Create folder to store the dashboard in inside provisioning/dashboards
-  2. Open this folder in terminal
-..c. Run ../download.sh website.cyglass.com "Dashboard Name"
+   1. Create folder to store the dashboard in inside provisioning/dashboards
+   2. Open this folder in terminal
+   3. Run ../download.sh website.cyglass.com "Dashboard Name"
 3. Upload changes to git
-⋅⋅a. Ensure that the new dashboard and all its visualizations are accounted for in the folder.
-⋅⋅b. Use eclipse to push changes(The dashboard files) to github.
+   1. Ensure that the new dashboard and all its visualizations are accounted for in the folder.
+   2. Use eclipse to push changes(The dashboard files) to github.
 4. Create the container by running Jenkins [devops](http://buildserver:8080/view/DevOps%20Containers/job/Build%20dev-latest%20DevOps%20Environment/)
 5. Push to dev with Rundeck: [Install Kibana and Teleport](https://dev-latest-rundeck.cyglass.com:4443/project/cyglass/job/show/c7e818fc-13e4-4031-bf06-5fc58fec6004)
 6. Push to staging with rundeck: [staging-staging-rundeck.cyglass.com](staging-staging-rundeck.cyglass.com)
